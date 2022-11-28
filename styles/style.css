@@ -14,7 +14,7 @@
   height: 32px;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -34,7 +34,7 @@
 .header__title {
   width: 730px;
   font-size: 102px;
-  font-style: 600;
+  font-weight: 600;
   line-height: 96px;
   margin: auto 64px;
   z-index: 2;
@@ -43,7 +43,6 @@
 .header__subtitle {
   width: 388px;
   font-size: 18px;
-  font-style: normal;
   line-height: 25px;
   position: absolute;
   left: 64px;
@@ -54,7 +53,6 @@
 .header__link {
   font-size: 18px;
   text-decoration: none;
-  font-style: normal;
   line-height: 25px;
   color: #2f80ed;
 }
@@ -97,6 +95,7 @@
 }
 
 .two-columns {
+  padding-left: 0;
   display: flex;
   list-style: none;
 }
@@ -105,8 +104,8 @@
   padding-top: 100px;
   width: 175px;
   font-size: 18px;
+  font-weight: normal;
   line-height: 1.2;
-  font-style: normal;
   color: #2f80ed;
   margin: 0;
 }
@@ -124,7 +123,6 @@
   margin: 0;
   font-size: 24px;
   line-height: 34px;
-  font-style: normal;
 }
 
 .two-columns__paragraph_indent {
@@ -162,11 +160,9 @@
   text-align: center;
 }
 
-.section-subtitle_theme_dark {
-  color: white;
-}
 
 .table {
+  padding-left: 0;
   align-self: center;
   list-style: none;
   width: 1100px;
@@ -192,7 +188,6 @@
 
 .table__heading {
   margin: 0;
-  width: 250px;
   padding: 0;
   font-size: 24px;
   line-height: 1.15;
@@ -223,7 +218,7 @@
   margin: 100px 0 0 0;
   width: 648px;
   font-size: 120px;
-  font-style: 600;
+  font-weight: 600;
   line-height: 1.15;
   text-align: center;
   align-self: center;
@@ -243,7 +238,6 @@
   right: 48px;
   font-size: 36px;
   text-decoration: none;
-  font-style: normal;
   line-height: 51px;
   color: #2f80ed;
 }
@@ -281,14 +275,16 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+}
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
 }
 
@@ -296,44 +292,32 @@
   font-size: 18px;
   line-height: 25px;
   color: white;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  margin: 18px 0 18px 0;
 }
 
-.column__heading {
-  margin: 0;
-  padding-bottom: 20px;
+.footer__column-heading {
+  margin: 0 0 20px 0;
   font-size: 18px;
-  font-style: 600;
+  font-weight: 600;
   line-height: 30px;
   color: white;
 }
 
-.column__links {
+.footer__column-links {
   display: flex;
   flex-direction: column;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-.column__link {
+.footer__column-link {
   font-size: 18px;
   line-height: 30px;
   color: white;
   text-decoration: none;
 }
 
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer__social-icon {
   height: 16px;
   width: 16px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
