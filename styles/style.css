@@ -32,16 +32,18 @@
 }
 
 .header__title {
-  width: 730px;
+  margin: 0 0 0 64px;
+  align-self: center;
+  max-width: 730px;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
-  margin: auto 64px;
   z-index: 2;
 }
 
 .header__subtitle {
-  width: 388px;
+  margin: 0;
+  max-width: 388px;
   font-size: 18px;
   line-height: 25px;
   position: absolute;
@@ -60,8 +62,7 @@
 .header__main-illustration {
   width: 765px;
   height: 608px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  object-fit: cover;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -95,8 +96,10 @@
 }
 
 .two-columns {
+  width: 80%;
   padding-left: 0;
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -125,7 +128,11 @@
   line-height: 34px;
 }
 
-.two-columns__paragraph_indent {
+.two-columns__paragraph:nth-child(2) {
+  padding-top: 30px;
+}
+
+.two-columns__paragraph:nth-child(3) {
   padding-top: 30px;
 }
 
@@ -133,15 +140,16 @@
   font-weight: 600;
 }
 
-.digit {
+.digits {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .section-title {
   padding-top: 100px;
-  width: 60%;
+  min-width: 60%;
   margin: 0;
   font-size: 60px;
   line-height: 1.15;
@@ -151,16 +159,21 @@
 
 .section-title_theme_dark {
   color: white;
+  z-index: 1;
 }
 .section-subtitle {
-  width: 60%;
+  min-width: 60%;
   margin: 20px 0 0 0;
   font-size: 24px;
   line-height: 34px;
+  font-weight: normal;
   text-align: center;
 }
 
-
+.section-subtitle_theme_dark {
+  z-index: 1;
+  color: white;
+}
 .table {
   padding-left: 0;
   align-self: center;
@@ -202,7 +215,7 @@
 }
 
  .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -229,6 +242,7 @@
   margin: 70px 0 0 0;
   font-size: 36px;
   line-height: 51px;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -252,8 +266,11 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 877px;
-  max-width: 877px;
+  width: 877px;
   z-index: 0;
   position: absolute;
   right: -210px;
