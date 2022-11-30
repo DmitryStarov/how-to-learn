@@ -87,20 +87,12 @@
   flex-wrap: wrap;
 }
 
-.description {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  justify-content: center;
-  width: 80%;
-}
-
 .two-columns {
+  margin: 0 auto;
   width: 80%;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 
 .two-columns__brief {
