@@ -1,0 +1,7 @@
+.techniques {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+}
