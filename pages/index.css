@@ -107,3 +107,6 @@
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../blocks/footer/__column/_content/footer_column_content_copyright.css);
 /*конец импорт модификаторов*/
+* {
+    outline: 1px solid red;
+  }
